@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Flow+Circular&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto Condensed", serif;
+}
+
+.container{
+    background-color: black;
+}   
+
+.left {
+    width: 25vw;
+    background-color: #f1f1f1;
+    
+    
+}
+
+
+.home ul li {
+    list-style: none;
+    width: 15px;
+    display: flex;
+    gap:15px;
+    margin-top: 10px;
+}
+.home{
+    padding: 10px;
+}
+.heading{
+    display: flex;
+    padding-top: 15px;
+    padding: 23px 14px;
+    width: 100%;
+    gap: 15px;
+    align-items: center;
+    
+}
+.heading img{
+    width: 30px; ;
+}
+.library{
+    min-height: 75vh;
+    position: relative;
+    align-items: center;
+
+}
+.heading h1{
+    font-weight: bold;
+    font-size: 13px;
+    /* margin-top: 15px; */
+}
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 10px;
+    justify-content: left;
+    column-gap: 10px;
+    position: absolute;
+    bottom: 0;
+}
+.footer a{
+    color: gray;
+}
+.right {
+    width: 75vw;
+    background-color: #000000;
+    margin: 8px 0px;
+    border-radius: 7px;
+    position: relative;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #393939;
+}
+.header > *{
+    padding: 10px;
+}
+.spotifyPlaylist{
+    padding: 10px;
+    
+    
+
+}
+.spotifyPlaylist h1{
+    /* font-size: 20px; */
+    font-weight: bold;
+    color: white;
+    margin: 10px;
+}
+.card{
+    /* border: 2px solid #f90000; */
+    position: relative;
+    padding: 10px;
+    border-radius: 7px;
+    width: 150px;
+    background-color: rgb(118, 118, 118);
+
+    
+    
+    
+}
+.card > *{
+    padding-top: 10px;
+    color: white;
+    /* block-size: border-box; */
+    
+}
+.card img{
+    width: 100%;
+    border-radius: 7px;
+    object-fit: contain;
+    /* padding: 10px; */
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.cardContainer{
+    margin: 20px;
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    max-height: 60vh;
+    overflow-y: scroll;
+  
+}
+.play{
+    height: 34px;
+    width: 34px;
+    display: flex ;
+    padding: 3px;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 123px;
+    right: 17px;
+}
+.play svg {
+    transform: scale(1.5); /* Adjust the scale factor */
+}
+.playbar{
+    width: 73%;
+    position: fixed;
+    bottom: 0;
+    /* left: 0; */
+    height: 55px;
+    padding: 10px;
+    background-color: #878787;  
+    box-sizing: border-box;
+    border-radius: 30px;
+   
+}
+.songbuttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+   
+
+}
+.songlist ul {
+    height: 50vh;
+    overflow-y: scroll;
+}
+.songlist ul li {
+    list-style: none ;
+    
+}
+.playnow{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px; 
+    padding: 5px 10px;
+    background-color: #393939;
+    border-radius: 7px;
+    border: 1px solid #ffffff;
+    margin-top: 5px;
+    margin: 5px 10px;
+    
+}
+.playnow h3{
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+}
+.playnow h4{
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+}
+.playbartime{
+    margin-top: 7px;
+    box-sizing: border-box;
+    border: 2px solid #ffffff;
+    border-radius: 7px;
+    width: 100%;
+    
+}
+.circle{
+    box-sizing: border-box;
+    border-radius: 50%;
+    background-color: #ffffff;
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    bottom: -1px;
+    left: 0%;
+    transition: left 0.5s;
+}
+.songifo, .songTime{
+    display: flex;
+    color: #ffffff;
+    width: 29vw;
+    font-size: small;
+}
+.songTime{
+    justify-content: center;
+}
+.abovebar{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    /* padding: 10px; */
+}
+.adjustbar{
+    position: relative;
+    padding:2px;
+}
